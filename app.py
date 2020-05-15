@@ -2,7 +2,11 @@
 """
 Created on Tue Apr 21 14:57:17 2020
 
-@author: etill
+@author: mcalregreenlees
+
+Mary Clare Greenlees
+mcg2204 
+1006 Final
 """
 
 #import statements
@@ -13,8 +17,18 @@ app = Flask(__name__)
 
 #static route
 @app.route("/")
-def hello():
-    return "Hello World!"
+def home_page():
+    return render_template("index.html")
+
+#return <b> Test 123 </b>
+    #this makes something bolded
+
+@app.route("/1006")
+def classes():
+    return render_template("classes.html")
+
+# to link to other things - use <a href-"website"></a>
+           
 
 #start the server
 if __name__ == "__main__":
