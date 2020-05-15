@@ -27,8 +27,9 @@ def home_page():
 def classes():
     return render_template("classes.html")
 
-# to link to other things - use <a href-"website"></a>
-           
+@app.route("/neptune")
+def neptune():
+    return render_template("neptune.html")
 
 #start the server
 if __name__ == "__main__":
