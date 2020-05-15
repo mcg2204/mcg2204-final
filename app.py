@@ -23,7 +23,7 @@ def home_page():
 #return <b> Test 123 </b>
     #this makes something bolded
 
-@app.route("/1006")
+@app.route("/classes")
 def classes():
     return render_template("classes.html")
 
